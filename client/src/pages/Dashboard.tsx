@@ -6,9 +6,9 @@ export default function Dashboard() {
   const [tick, setTick] = React.useState(0);
 
   return (
-    <div className="space-y-8">
+    <div className="space-y-8 animate-fade-in">
       {/* Pro Tip Marquee */}
-      <div className="w-full bg-gradient-to-r from-indigo-600 to-violet-600 text-white py-2 overflow-hidden rounded-lg shadow-md">
+      <div className="w-full bg-gradient-to-r from-indigo-600 to-violet-600 text-white py-2 overflow-hidden rounded-lg shadow-md hover:shadow-lg transition-shadow">
         <div className="marquee-container">
           <div className="marquee-content text-sm font-medium">
             Pro Tip: Custom codes help your audience remember your links. Try
@@ -23,7 +23,7 @@ export default function Dashboard() {
       <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
         {/* Left Column: Create Link Form */}
         <div className="lg:col-span-2">
-          <div className="glass-panel rounded-2xl p-6 md:p-8 h-full">
+          <div className="glass-panel rounded-2xl p-6 md:p-8 h-full hover-lift">
             <h2 className="text-2xl font-bold mb-1 text-slate-800">
               Create New Link
             </h2>
@@ -36,7 +36,10 @@ export default function Dashboard() {
 
         {/* Right Column: How it works */}
         <div className="lg:col-span-1">
-          <div className="glass-panel rounded-2xl p-6 h-full">
+          <div
+            className="glass-panel rounded-2xl p-6 h-full hover-lift"
+            style={{ animationDelay: "0.1s" }}
+          >
             <h2 className="text-lg font-bold mb-4 text-slate-800">
               How it works
             </h2>
@@ -71,7 +74,10 @@ export default function Dashboard() {
       </div>
 
       {/* Full Width: Your Links Table */}
-      <div className="glass-panel rounded-2xl p-6 md:p-8">
+      <div
+        className="glass-panel rounded-2xl p-6 md:p-8 hover-lift"
+        style={{ animationDelay: "0.2s" }}
+      >
         <div className="flex items-center justify-between mb-6">
           <h3 className="text-xl font-bold text-slate-800">Your Links</h3>
         </div>

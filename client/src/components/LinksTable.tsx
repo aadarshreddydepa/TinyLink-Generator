@@ -65,7 +65,32 @@ export default function LinksTable() {
   }
 
   if (loading) {
-    return <div className="p-4 bg-white rounded shadow">Loading links...</div>;
+    return (
+      <div className="mt-4">
+        <div className="flex items-center justify-between mb-6">
+          <div className="h-10 w-full max-w-md bg-slate-200 rounded-lg animate-pulse"></div>
+          <div className="flex gap-3">
+            <div className="h-10 w-40 bg-slate-200 rounded-lg animate-pulse"></div>
+            <div className="h-10 w-10 bg-slate-200 rounded-lg animate-pulse"></div>
+          </div>
+        </div>
+        <div className="bg-white rounded-xl border border-slate-200 shadow-sm overflow-hidden">
+          <div className="h-12 bg-slate-50 border-b border-slate-200"></div>
+          {[1, 2, 3].map((i) => (
+            <div
+              key={i}
+              className="p-4 flex items-center justify-between border-b border-slate-100 last:border-0"
+            >
+              <div className="space-y-2">
+                <div className="h-4 w-32 bg-slate-200 rounded animate-pulse"></div>
+                <div className="h-3 w-48 bg-slate-100 rounded animate-pulse"></div>
+              </div>
+              <div className="h-8 w-24 bg-slate-100 rounded animate-pulse"></div>
+            </div>
+          ))}
+        </div>
+      </div>
+    );
   }
 
   return (
