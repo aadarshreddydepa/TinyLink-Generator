@@ -105,6 +105,31 @@ TinyLink follows a **"Glass & Gradient"** design language:
 - **Typography**: Uses **Inter** for clean, legible, and modern text.
 - **Interactions**: Smooth hover states and transitions for a premium feel.
 
+## 📂 Project Structure
+
+```bash
+tinylink/
+├── client/                 # Frontend React Application
+│   ├── src/
+│   │   ├── components/     # Reusable UI components (Header, LinkForm, etc.)
+│   │   ├── pages/          # Page views (Dashboard, Stats, 404)
+│   │   ├── services/       # API integration logic
+│   │   └── styles/         # Global styles and Tailwind configuration
+│   └── ...
+│
+└── server/                 # Backend Node.js Application
+    ├── src/
+    │   ├── controllers/    # Request handlers
+    │   ├── models/         # Mongoose schemas
+    │   ├── routes/         # API route definitions
+    │   └── utils/          # Helper functions
+    └── ...
+```
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
 ---
 
-_Built with ❤️ 
+_Built with ❤️ for the Assignment Submission_
