@@ -2,6 +2,11 @@
 
 A modern, full-stack URL shortener application built with performance and aesthetics in mind. TinyLink allows users to shorten long URLs, track click analytics, and manage their links through a beautiful, responsive interface.
 
+## 🌐 Live Demo
+
+- **Frontend**: [https://tiny-link-generator.vercel.app/](https://tiny-link-generator.vercel.app/)
+- **Backend**: [https://tinylink-generator.onrender.com/](https://tinylink-generator.onrender.com/)
+
 ## ✨ Features
 
 - **🔗 Smart Shortening**: Instantly convert long, messy URLs into clean, short links.
